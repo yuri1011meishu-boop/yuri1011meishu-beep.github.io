@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>めいしゅう　ゆうり</title>
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.svg">
+</head>
+
+<body>
+  <header>
+    <!--TOPアイコン-->
+    <a href="index.html" class="to_top"><img src="img/icon_top.png" class="icon_top"></a>
+    <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- サイドメニュー -->
+    <nav class="side-menu" id="sideMenu">
+      <ul>
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="index.html#works">WORKS</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="title">meishuyuriめいしゅうゆうりのポートフォリオ</h1>
+  <section class="pc">
+    <lottie-player src="json/portfolio_logo.json" autoplay style="width:100%; height:100vh;">
+    </lottie-player>
+  </section>
+  <section class="sp">
+    <img src="img_sp/portforio_logo_sp_img.png" width="100%">
+  </section>
+  <div id="wrapper">
+    <section>
+      <h2 id="works">WORKS</h2>
+      <ul class="works_flex">
+        <li class="works_left">
+          <a href="page01.html">
+            <img src="img/works_button01.jpg" class="pc" alt="架空HP_pc">
+            <img src="img_sp/works_button_sp01.jpg" class="sp" alt="架空HP_sp">
+          </a>
+        </li>
+        <li class="works_right">
+          <a href="page02.html">
+            <img src="img/works_button02.jpg" class="pc" alt="架空バナー_pc">
+            <img src="img_sp/works_button_sp02.jpg" class="sp" alt="架空バナー_sp">
+          </a>
+          <a href="page03.html">
+            <img src="img/works_button03.jpg" class="pc" alt="イラスト_pc">
+            <img src="img_sp/works_button_sp03.jpg" class="sp" alt="イラスト_sp">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="about">ABOUT</h2>
+      <div class="about_flex">
+        <div class="about_pic">
+          <p><img src="img/about.jpg"></p>
+        </div>
+        <div class="about_text">
+          <h3>明周　友宇里<small>めいしゅう　ゆうり</small></h3>
+          <p class="about_detail">
+            2000年生まれ。愛知県出身。幼少期から、絵を描くことや工作が大好き。<br>
+            四大卒業後、看護師として就職。仕事にやりがいを感じつつも、子供の頃から
+            憧れたデザイン業界に挑戦するため、退職。<br>
+            異業種への転職は難航し、金銭的な問題から一時工場の製造員に転職。<br>
+            在職中にWEB解析士の資格を取得。<br>
+            現在は、職業訓練校に通いながら転職活動中。
+          </p>
+        </div>
+      </div><!--.about_flex-->
+    </section>
+    <section>
+      <h2 id="contact">CONTACT</h2>
+      <div class="contact_content">
+        <p>
+          ご覧いただきありがとうございました。<br>
+          お問い合わせは、下記メールアドレスまでお願いします。
+        </p>
+        <a href="mailto:yuri1011meishu&#64;gmail.com">yuri1011meishu@gmail.com</a>
+      </div>
+    </section>
+  </div><!--#wrapper-->
+  <footer>
+    <nav>
+      <ul class="footer_nav">
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="footer_logo">
+      <a href="index.html" class="logo_white"><img src="img/logo_white.png"></a>
+    </div>
+    <small class="copy">&copy;2025 yurimeishu</small>
+  </footer>
+  <!-- Lottie-playerのライブラリインポート-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!--jsファイル-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
