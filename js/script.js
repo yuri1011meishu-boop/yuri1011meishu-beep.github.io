@@ -32,3 +32,36 @@ $('#wrapper').on('scroll', function () {
   });
 
 });
+//お問い合わせフォーム
+// ===== CONTACT FORM mailto送信 =====
+const form = document.getElementById("contact_form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // 通常送信を止める
+
+  const name = document.getElementById("name").value;
+  const company = form.querySelector('input[name="会社名"]').value;
+  const email = form.querySelector('input[name="email"]').value;
+  const message = document.getElementById("message").value;
+
+  const body = `
+【お名前】
+${name}
+
+【会社名】
+${company}
+
+【返信用メールアドレス】
+${email}
+
+【お問い合わせ内容】
+${message}
+  `;
+
+  const mailtoLink =
+    "mailto:yuri1011meishu@gmail.com" +
+    "?subject=" + encodeURIComponent("ポートフォリオからのお問い合わせ") +
+    "&body=" + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+});
