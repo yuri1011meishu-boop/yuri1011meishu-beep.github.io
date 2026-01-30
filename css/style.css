@@ -268,8 +268,6 @@ h3 {
   padding-top: 200px;
 }
 
-.contact_content p {}
-
 .contact_content a {
   display: block;
   width: fit-content;
@@ -742,14 +740,18 @@ article p {
   }
 
   .about_detail {
-    padding-top: 20px;
+    padding-top: 16px;
   }
 
+small{
+font-size:10px;
+margin-left:20px;
+}
   /*contact*/
   .contact_content {
+		width:100%;
     padding-left: 0;
     padding-top: 100px;
-    background-color: pink;
   }
 
   .contact_content p {
@@ -758,19 +760,8 @@ article p {
 
   .contact_content a {
     display: block;
-    width: 220px;
-    margin-top: 100px;
-    padding: 20px;
-    color: #ccc;
-    background-color: #BE574E;
-    border: 2px #BE574E solid;
-    cursor: pointer;
-    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
-  }
-
-  .contact_content a:hover {
-    color: #BE574E;
-    background-color: #ccc;
+    margin-top: 100px auto 0 auto;
+    padding: 15px;
   }
 
   /*form*/
@@ -890,11 +881,10 @@ article p {
 
   .page01_left {
     padding-top: 80px;
-
   }
 
   .page01_right {
-    width: 400px;
+    width:100%;
     padding-top: 80px;
   }
 
@@ -978,7 +968,7 @@ article p {
   .slide_wrapper {
     display: flex;
     width: max-content;
-    animation: slide-flow 40s linear infinite;
+    animation: slide-flow 30s linear infinite;
   }
 
   .slide {
