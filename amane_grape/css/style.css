@@ -185,7 +185,6 @@ h1 {
     }
 }
 
-/*品種*/
 h2 {
     font-weight: normal;
     text-align: center;
@@ -193,31 +192,42 @@ h2 {
     padding: 50px 0;
 }
 
-.img_box img {
-    width: 20vw;
-    height: auto;
+#text_box {
+    width: 100%;
+    padding-bottom: 80px;
 }
 
 #text_concept {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    max-height: 80vh;
-    margin: 0 auto 150px;
-    overflow-x: auto;
+    width: fit-content;
+    margin-block: auto;
+    max-height: 100%;
+    overflow-x: visible;
 }
 
 #text_concept h3 {
+    font-size: 26px;
     white-space: nowrap;
     letter-spacing: 0.1em;
 }
 
 #text_concept p {
-    padding-block: 30px;
+    padding-block: 20px;
     padding-inline: 10px;
+    line-height: 40px;
 }
 
-#text_concept h3 {
-    font-size: 26px;
+
+/*品種*/
+
+.img_box {
+    padding-bottom: 100px;
+}
+
+.img_box img {
+    width: 20vw;
+    height: auto;
 }
 
 /*商品*/
@@ -238,10 +248,6 @@ h4 {
 
 .img_box ul li p {
     text-align: center;
-}
-
-.img_box {
-    padding-bottom: 100px;
 }
 
 /*ホバーアニメーション*/
@@ -420,6 +426,12 @@ footer {
         background-color: #fff;
     }
 
+    /*コンセプト*/
+
+    #text_concept p {
+        line-height: 25px;
+    }
+
     /*商品*/
     .flex-center {
         display: flex;
@@ -452,16 +464,29 @@ footer {
         padding-bottom: 100px;
     }
 
+    /*地図*/
+    #map {
+        padding-bottom: 60%;
+    }
+
     /*お問い合わせ*/
     form {
         background-color: #435663;
         border-radius: 20px;
         font-size: 15px;
         color: #fff;
-        width: 60vw;
-        max-width: 520px;
+        width: 80%;
+        max-width: none;
         margin: 0 auto;
         padding: 30px 50px 30px 30px;
+    }
+
+    .form_row {
+        grid-template-columns: 140px 1fr;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
 }
